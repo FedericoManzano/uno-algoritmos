@@ -1,0 +1,16 @@
+que 
+
+Evaluar si una nota es mayor a 6 o no e informarle al usuario
+
+datos: nota
+salida: Mensaje informativo de la situación del problema
+
+como 
+
+A través del ingreso de un número evaluamos al mismo 
+con la condición booleana > 6. Si la misma se cumple
+Informamos al usuarios con un mensaje que la nota ingresada es 
+mayor a 6. Caso contrario también lo informamos a través 
+de un mensaje aclaratorio.
+
+

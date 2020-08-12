@@ -1,0 +1,28 @@
+que
+---
+
+A través del ingreso de dos valores numéricos (A,B) se requiere calcular
+la suma, resta, multiplicación y división de estos como así tambien intercambiar los valores 
+de las variables utilizadas.
+
+como
+----
+
+Una vez ingresados los valores se procesa la suma, resta, multiplicación y división 
+y se las guarda en variables con esos nombres. El paso siguiente es mostrar dichos valores 
+al usuario a través de la consola y luego intercambiar el valor de las variables utilizando 
+una variable auxiliar.
+
+Entradas
+
+A -> (Numérico, float)
+B -> (Numérico, float)
+
+Salida
+
+suma -> (Numérico, float)
+resta -> (Numérico, float)
+mul -> (Numérico, float)
+div -> (Numérico, float)
+
+A y B intercabiados.

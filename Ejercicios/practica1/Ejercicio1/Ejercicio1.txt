@@ -1,0 +1,13 @@
+que.
+
+Se pide al usuario los datos (nombre, apellido, teléfono, edad). Y luego se requiere 
+mostrar estos datos por pantalla.
+
+// En este caso no existe un proceso los datos no se transforman 
+// Porque la entrada y la salida es exactamente igual.
+
+
+datos entrada: nombre, apellido, teléfono, edad
+salida: nombre, apellido, teléfono, edad
+
+
