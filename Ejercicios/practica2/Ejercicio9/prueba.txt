@@ -1,0 +1,5 @@
+A	B	C	Salida
+3	4	4 	"Isosceles"
+3	3	3 	"Equilatero"
+1	1	2	"Isosceles"
+2	7	10	"Escaleno"

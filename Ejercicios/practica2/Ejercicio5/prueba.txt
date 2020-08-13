@@ -1,0 +1,5 @@
+nota mensaje
+10   "Nota aprobada"
+5    "Nota desaprobada"
+7    "Nota aprobada"
+6    "Nota desaprobada"

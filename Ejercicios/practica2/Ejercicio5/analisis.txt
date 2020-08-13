@@ -1,0 +1,15 @@
+que 
+
+Entradas: nota (Valor numérico)
+Salidas: Mensaje informativo si la nota es mayor o igual a 7 o menor 
+
+Proceso: Se solicita un valor por pantalla y luego se decide si el valor cumple la condición o no.
+
+como: 
+
+Entrada: solicitar al usuario que ingrese por pantalla un valor numérico (int) nota
+Proceso: evaluar si nota >= 7
+Salida: si la condición se cumple mostramos un mensaje que diga "La nota es aprobado"
+	caso contrario el mensaje sería "La nota es desaprobado".
+
+

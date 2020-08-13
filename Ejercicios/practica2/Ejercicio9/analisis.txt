@@ -1,0 +1,26 @@
+que
+
+Proceso: Evaluar los 3 lados ingresados por el usuario y determinar que tipo de triángulo 
+conforman.
+
+Entrada: A, B, C lados del triángulo
+salida: mensaje con el tipo de triángulo.
+
+como
+ 
+entrada: 3 valores numéricos A, B, C las variables utilizadas.
+proceso: + Guardar los valores ingresados en A,B,C
+	 + Evaluar si A == B
+			si A == C
+				"Equilatero"
+		        si no 
+				"Isosceles"
+		   si no
+			si B == C
+				"Isosceles"
+			si no
+				"Escaleno"
+
+Salida: "Escaleno" , "Isosceles", "Equilatero".
+
+   
