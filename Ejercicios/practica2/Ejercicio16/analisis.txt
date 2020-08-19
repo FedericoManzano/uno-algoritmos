@@ -1,0 +1,19 @@
+Que 
+
+entradas: Notas de alumnos
+salidas: promedio de notas de los alumnos
+proceso: Acumular las notas de los alumnos y la cantidad y luego calcular el promedio.
+
+como:
+
+Proceso: Inicializo contador, acumulador
+	pido la nota del alumno
+	** Mientras nota no sea 0
+		incremento el contador
+		acumulo la nota en el acumulador
+		pido la nota del alumno **
+	
+	Calculo el promedio
+	Muestro el promedio.
+
+

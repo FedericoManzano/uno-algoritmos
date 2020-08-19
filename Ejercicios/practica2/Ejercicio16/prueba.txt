@@ -1,0 +1,15 @@
+
+
+Variables
+contador: numérico (Entero)
+acumulador:  numérico (Entero)
+nota: numérico (Entero)
+promedio: numérico (Real).
+
+nota	contador	acumulador	promedio
+-	0		0		-
+10	1		10		-
+8	2		18		-
+7	3		25		-
+4	4		29		-
+0	4		29		7.25		
