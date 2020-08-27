@@ -1,0 +1,17 @@
+que 
+
+entrada: condición (char caracter)
+	 nombre: cadena caracteres (cadena)
+         edad: entero
+         esp: especialidad numerico (1,2,3,4)
+proceso:
+	calcular cuantos clientes particulares son ingresados, cuantos pacientes
+	socios, calcular el total recaudado de todos los ingresos de pacientes, 
+	informarle a cada paciente si es que debe abonar o no la consulta según su condición,
+	también es necesario calcular lo recaudado por especialidad y la edad menor de los pacientes
+	y al final informar la cantidad de turnos ingresados junto con el monto a recaudar por los mismos
+
+como
+proceso condición de fin: un bucle mientras hasta que se ingrese una condición 'E'.
+	si la condición ingresada es 's' contamos el paciente como socio conSoc ++
+

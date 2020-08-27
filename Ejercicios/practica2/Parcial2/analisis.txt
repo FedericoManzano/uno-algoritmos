@@ -1,0 +1,16 @@
+que 
+
+salidas: cantidad de superaciones rojas por micro
+	 promedio de velocidad de luces amarillas
+	 numero de micro que tuvo la velocidad maxima
+
+Entradas: numero de micro numMic: Entero
+	  velocidad: float
+	  latitud: entero
+	  longitud: entero
+
+
+ban micro velocidad latitud longitud porcentaje cantAmarillas acuAmarillas cantRojas1 cantRojas2 cantRojas3 cantRojas4 maxVel microMax
+1	1    95      10      15       5.55       1             95           0             0       0           0         95     1 
+0       3    120     15      15       33.33      1             95           0             0       1           0         120    3
+0       4    100     30      20       11.11      2             195          0             0       1           0         120    3 

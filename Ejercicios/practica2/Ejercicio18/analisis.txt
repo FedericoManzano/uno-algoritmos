@@ -1,0 +1,29 @@
+Ejercicio18
+
+que
+
+datos: se ingresan los codigos de articulos y los precios de productos.
+proceso: evaluo los precios del los  articulos de manera de poder encontrar el cod de
+articulo del precio mas alto.
+
+salida: codigo de articulo con el precio mas alto.
+
+como:
+entrada: "codarticulo" valor numérico (Entero).
+	 "precio" valor numérico. (Entero).
+
+proceso: ciclo mientras con la condición de fin cod de articulo diferente de 0
+inicializo la variable premin y codmin con la ayuda de una bandera ban = 1 en la primera iteración del ciclo, luego de esto ban = 0.
+luego evaluo los precios de cada articulo y los comparo con premax cuando estos precios sean mayores 
+redefino los valores de las variables premax codmax de manera tal de tener el codigo del articulo con 
+el precio maximo.
+
+salida: muesto un mensaje acompañado con el valor de codmax.
+
+
+precio codigo codmax premax ban
+10	2     2      10      1
+20      3     3      20      0
+15      5     3      20      0
+25      10    10     25      0
+
