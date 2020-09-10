@@ -13,6 +13,24 @@ typedef struct {
 
 }t_libro;
 
+
+float calcularMonto(t_libro *libro) {
+    return ((libro->precio * 10) / 100) * libro->unidades;
+}
+
+void ingresarDatos (t_libro *libro) {
+    printf("Ingrese el titulo del libro: ");
+    scanf(" %[^\n]%*c", libro->titulo);
+    printf("Precio: ");
+    scanf(" %f", &libro->precio);
+    printf("Unidades: ");
+    scanf(" %d", &libro->unidades);
+    printf("Tipo: ");
+    scanf(" %c", &libro->tipo);
+    printf("Nacionalidad: ");
+    scanf(" %d", &libro->nacionalidad);
+}
+
 int main(char *args, char arg ) {
 
     system("clear");
@@ -36,25 +54,9 @@ int main(char *args, char arg ) {
     scanf(" %c", &cond);
     
     while(cond == 'S' || cond == 's') {
-        printf("Ingrese el titulo del libro: ");
-        scanf(" %[^\n]%*c", libro.titulo);
+        ingresarDatos(&libro);
 
-        printf("Precio: ");
-        scanf(" %f", &libro.precio);
-
-
-        printf("Unidades: ");
-        scanf(" %d", &libro.unidades);
-
-        printf("Tipo: ");
-        scanf(" %c", &libro.tipo);
-
-        printf("Nacionalidad: ");
-        scanf(" %d", &libro.nacionalidad);
-
-        monto = ((libro.precio * 10) / 100) * libro.unidades;
-
-
+        monto = calcularMonto(&libro);
 
         if(libro.tipo == 'S' || libro.tipo == 's' ) {
             switch(libro.nacionalidad) {

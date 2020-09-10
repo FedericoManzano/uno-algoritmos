@@ -1,0 +1,30 @@
+Tarea Obligatoria 1
+En una escuela primaria, los alumnos que estuvieron presentes, se han formado en una fila por orden de llegada. Con el objeto de llevar registros sobre el crecimiento de los niños, la maestra necesita realizar ciertos cálculos sobre las alturas de los alumnos.
+
+En la escuela hay 5 grados, de primero a quinto (de 1 a 5), y de cada grado hay tres cursos ('A','B' y 'C').
+
+De cada alumno se conoce la siguiente información:
+
+Nombre (valor cadena).
+
+Altura en cm (valor entero).
+
+Grado (valor entero de 1 a 5).
+
+Curso al que pertenece (valor char: 'A', 'B' o 'C').
+
+Para ayudar a la maestra, se te pide que desarrolles una aplicación, que obtenga los siguientes resultados:
+
+a)  Por cada alumno, informar su nombre y su posición en la fila.
+
+Al finalizar, informar:
+
+b)  La cantidad de alumnos en la fila, de cada curso.
+
+c) La altura del alumno más alto y la del más bajo (se suponen únicos), indicando en ambos casos, su posición en la fila. Considerar sólo a los alumnos de quinto grado.
+
+d) El promedio de las alturas, considerando a los alumnos de todos los grados.
+
+Se ingresan datos de alumnos hasta que el usuario lo determine.
+
+Se pide declaración de variables, diagrama de flujo y prueba de escritorio.
