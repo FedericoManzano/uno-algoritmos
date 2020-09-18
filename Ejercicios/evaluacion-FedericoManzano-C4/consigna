@@ -1,0 +1,29 @@
+En nuestro país se jugará un torneo de tenis el próximo año, con deportistas de varios países. Teniendo en cuenta la importancia de este nuevo torneo, la Secretaría de Deportes de la Nación ha evaluado distintas ciudades del país para realizar el nuevo torneo, que ya cuentan con estadios para la realización del evento, pero que deben ser refaccionados para que el mismo cuente con todas las comodidades y una infraestructura a la altura de los mejores recintos internacionales.
+
+La Secretaría de Deportes cuenta con la siguiente información, de cada estadio:
+
+Nombre del estadio (valor cadena)
+
+Región del país donde está ubicado el estadio (valor char: 'N'=Norte, 'M'=Metropolitana, 'C'=Centro, 'S'=Sur)
+
+Capacidad de espectadores (valor entero)
+
+Cantidad de canchas (valor entero)
+
+Costo de la refacción (valor real).
+
+ 
+
+Se conocen los recursos que tiene la Secretaría para hacer la refacción y es de 100000 pesos.
+
+Los datos terminan cuando el operador ingresa 'N' como respuesta a la pregunta: Desea seguir ingresando datos de estadios S/N?
+
+Se pide informar:
+
+a) Por cada estadio, si el costo de refacción es superior a los recursos disponibles, un cartel indicando "No alcanzan los recursos, obra inviable”. De lo contrario, un cartel indicando "Obra viable”.
+
+b) La cantidad de estadios con capacidad mayor a 15000 personas y más de 5 canchas, en los cuales la obra de refacción sea viable (alcanzan los recursos).
+
+c) El costo total de refacción por región del país, considerando todos los estadios.
+
+d) El nombre del estadio que tenga el menor costo de refacción, considerando sólo los estadios que pueden refaccionarse (la obra es viable). Informar además ese costo y la región del país donde se encuentra. (se supone único).
