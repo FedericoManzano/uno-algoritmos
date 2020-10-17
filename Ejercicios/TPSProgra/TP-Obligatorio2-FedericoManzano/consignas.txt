@@ -1,0 +1,37 @@
+Se desea hacer una aplicación para registrar los resultados de cada uno de los equipos de la Liga  Metropolitana  de basketball de este año. Los equipos están identificados con un código numérico. Los resultados de los equipos de la mencionada liga son los siguientes:
+
+Número del equipo (valor entero).
+
+Nombre del equipo (valor cadena).
+
+Cantidad de victorias (valor entero).
+
+Cantidad de derrotas (valor entero).
+
+Cantidad de triples anotados en todos los partidos (valor entero).
+
+Cantidad de infracciones cometidas en todos los partidos (valor entero).
+
+Los datos de los equipos terminan cuando el operador indica que no desea registrar más equipos.
+
+Se pide informar: Por cada equipo, su desempeño en la liga. Para evaluarlo, deberá hacerlo con las funciones que se explican más adelante.
+
+Para tener buen desempeño, todas las funciones deberán dar como resultado 1. En ese caso, informar por pantalla "Buen desempeño”, y el nombre del equipo. En caso contrario, informar "Mal desempeño, debe mejorar”, y el nombre del equipo.
+
+Al finalizar el registro de los equipos,  se debe informar:
+
+a)El número del equipo ganador: es el número de equipo cuya diferencia entre la cantidad de victorias y derrotas es máxima. (se supone único).
+
+b)La cantidad de equipos que tienen mal desempeño y deben mejorar.
+
+Para informar los puntos a y b, hacer una función que reciba como parámetros los valores a   informar (número de equipo ganador y cantidad de equipos con mal desempeño), y lo haga con carteles aclaratorios en forma elegante.
+
+Funciones a crear y utilizar para evaluar el desempeño:
+
+Validar partidos ganados: Recibe como parámetro la cantidad de victorias y la cantidad de derrotas, y devuelve 1 si la cantidad de victorias es mayor a la cantidad de derrotas y 0 en caso contrario.
+
+Validar cantidad de triples: Recibe como parámetro la cantidad de triples anotados en todos los partidos, y devuelve 1 si la cantidad de triples es mayor a 20 y 0 en caso contrario.
+
+Validar cantidad de infracciones: Recibe como parámetro la cantidad de infracciones cometidas en todos los partidos, y devuelve 1 si la cantidad de infracciones es menor a 10 y 0 en caso contrario.
+
+No se pueden utilizar variables globales. Se pide: CODIFICACION EN LENGUAJE C DEL ALGORITMO.
