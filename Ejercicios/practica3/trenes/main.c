@@ -147,6 +147,7 @@
  			val = 0;
 		}
  		printf("\n\t\tSeleccionar una opcion: ");
+ 		fflush(stdin);
  		scanf("%d", &opcion);
  		val = 1;
 	} while( !ESTACIONES(opcion) );

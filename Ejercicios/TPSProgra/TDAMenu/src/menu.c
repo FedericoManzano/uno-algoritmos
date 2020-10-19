@@ -2,7 +2,14 @@
 #include "../include/header.h"
 
 
-void crearMenu( t_menu *menu, char opciones[][TAM_MENU], const char * listaOp, const char * titulo, const char * pedirOpcion, const char * opcionErronea, const char * decoracion) {
+void crearMenu( t_menu *menu, 
+			char opciones[][TAM_MENU], 
+			const char * listaOp, 
+			const char * titulo, 
+			const char * pedirOpcion, 
+			const char * opcionErronea, 
+			const char * decoracion) {
+				
 	int i, cantidadOpciones = strlen( listaOp );	
 	for( i = 0; i < cantidadOpciones; i ++ ) 
 		strcpy(menu->opciones[i], opciones[i]);

@@ -4,6 +4,8 @@
 #include <string.h>
 
 
+
+
 void numeroPares();
 void mostrarInvertido();
 void mostrarMenorMayor();

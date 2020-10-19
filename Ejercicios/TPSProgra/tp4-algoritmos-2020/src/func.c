@@ -96,8 +96,8 @@ void mostrarCantMaySeis() {
 }
 
 void mostarPromedioPorcentaje () {
-	int arr[20] = {	5,-9,-5,
-					3,4,-8,
+	int arr[20] = {	5,	-9,	 -5,
+					3,	 4,	 -8,
 					2,8,5,-9,
 					-5,9,-5,
 					3,4,-8,
@@ -466,4 +466,26 @@ void calcularVendedores () {
 		if(montos[i] > 0) 
 			printf("%-10d%-20s%-.2f\n", codigos[i], nombres[i], montos[i]);
 	pausar();
+}
+
+int comparar_int(const void *e1, const void *e2) {
+	int * ele1 = (int *) e1;
+	int * ele2 = (int *) e2;
+	return  *ele1 -  *ele2;
+}
+
+
+
+void mostrarOrdenado() {
+	int arr[20], producto;
+	float promedio;
+	
+	titulo("Ordenar Vector 10 Elementos");
+	pedirVertorEnteros(arr,10);
+	titulo("Sin ordenar / Ordenado");
+	mostrarArregloEnteros(arr,10);
+	q_sort(arr, 10, sizeof(int), comparar_int);
+	mostrarArregloEnteros(arr,10);
+	pausar();
+	
 }

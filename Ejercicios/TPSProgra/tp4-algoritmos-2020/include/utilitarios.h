@@ -3,6 +3,9 @@
 #include <conio.h>
 #include <string.h>
 
+
+
+typedef int (* t_cmp)(const void *, const void *);
 void titulo(char * );
 void pausar();
 int indiceMenorVector(int *, int );

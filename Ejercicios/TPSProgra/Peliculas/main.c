@@ -24,9 +24,9 @@ int main(int argc, char *argv[]) {
 	while( ( op == 's' || op == 'S' ) && stockTotal( stock ) ) {
 		
 		
-		ingresarSeleccion(seleccion);
+		ingresarSeleccion( seleccion );
 		
-		if( puedeVender(seleccion, stock) ) {
+		if( puedeVender( seleccion, stock ) ) {
 			
 			monto = calcularPecio(seleccion);
 			actualizarStock(seleccion, stock);

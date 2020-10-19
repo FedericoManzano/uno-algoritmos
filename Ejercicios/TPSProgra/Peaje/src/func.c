@@ -62,9 +62,9 @@ void cargarEntradas(char * categoria, int * dia, char * horario, float * importe
 	val = 0;
 	do {
 		if(!val)
-			printf("Ingrese el horario (A/P): ");
+			printf("Ingrese el horario (A/B): ");
 		else
-			printf("Error ingrese nuevamente (A/P): ");
+			printf("Error ingrese nuevamente (A/B): ");
 		fflush(stdin);
 		scanf("%c", horario);
 		val =  1;

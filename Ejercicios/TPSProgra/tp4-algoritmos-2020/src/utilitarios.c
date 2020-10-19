@@ -169,7 +169,7 @@ void sumarMatrices(int matriz1[][3], int matriz2[][3], int tam) {
 	
 	for(i = 0; i < tam; i ++) 
 		for(j = 0; j < tam; j ++) 
-				res[i][j] += matriz1[i][j] + matriz2[i][j];		
+			res[i][j] += matriz1[i][j] + matriz2[i][j];		
 	
 	titulo("Resultado Suma");
 	
@@ -186,6 +186,35 @@ int buscarCodigoVenddor(int *codigos, int c) {
 	return -1;
 }
 
+
+
+void qs(void *arreglo, int ini,int fin, size_t tam, t_cmp comp) {
+	int i = ini;
+	int j = fin;
+	void *aux = malloc(tam);
+	int pivote = (i + j) / 2;
+	while(i <= j) {
+		while( comp((arreglo + (pivote * tam)), (arreglo + (i * tam))) > 0 && i <= fin)
+			i ++;
+		while( comp((arreglo + (pivote * tam)), (arreglo + (j * tam))) < 0 && j >= ini)
+			j --;
+		if(i <= j) {
+			memcpy(aux, (arreglo + (i * tam)), tam);
+			memcpy( (arreglo + (i * tam) ), (arreglo + (j * tam)), tam);
+			memcpy( (arreglo + (j * tam) ), aux, tam);
+			i ++;
+			j --;
+		}
+	}
+	free(aux);
+	if(ini <= j)
+		qs(arreglo,ini,j, tam,comp);
+    if(fin >= i)
+		qs(arreglo,i,fin, tam,comp );
+}
+void q_sort(void *a, int ce, size_t tam, t_cmp comp) {
+	qs(a,0,ce,tam, comp);
+}
 
 
 

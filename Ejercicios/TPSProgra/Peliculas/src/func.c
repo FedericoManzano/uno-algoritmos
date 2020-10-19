@@ -40,6 +40,8 @@ void actualizarStock( int *seleccion, int * stock ) {
 		stock[i] -= seleccion[i];
 }
 
+
+
 void mostrarMensaje( const int *stock , const int opcion, const float monto ) {
 	int i;
 	
@@ -51,9 +53,7 @@ void mostrarMensaje( const int *stock , const int opcion, const float monto ) {
 	
 	for( i = 0; i < CANT_PEL; i ++ ) 
 		if( stock[i] == 0 ) 
-			printf( "La pelicula %s no tiene stock \n\n", 
-				i == 0 ? "IP MAN 1" : 
-					i == 1 ? "IP MAN 2": "IP MAN 3" );
+			printf( "La pelicula IP MAN %d no tiene stock   \n\n", i + 1);
 	system("pause");
 }
 

@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
 
 	
 	printf("%s\n\n",str_pbrk(cadena2, cadena1));
-	printf("%s\n\n",str_rev(cadena2));
+//	printf("%s\n\n",str_rev(cadena2));
 	system("pause");
 	return 0;
 }
