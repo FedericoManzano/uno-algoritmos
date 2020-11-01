@@ -56,6 +56,6 @@ int main(int argc, char *argv[]) {
 		}
 	} while(op != 'S');
 	
-	
+	titulo("Gracias por usar la app !!!!");
 	return 0;
 }

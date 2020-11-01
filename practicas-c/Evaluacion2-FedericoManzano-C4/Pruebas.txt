@@ -1,0 +1,8 @@
+TiempoEspera = 15 // Definido 
+
+condFin		nroVuelo	Destino		Tiempo		Marca		cantEscalas	TiempoTotal  nMenor
+S		1		n		30		s		3		75''		-
+S		2		m		15		s		2		45''		-
+s		3		i		40		s		4		100''		-
+s		4		n		10		n		-		10''		4
+s		5		n		5		n		-		5''		5
