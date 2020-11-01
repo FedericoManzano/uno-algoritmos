@@ -480,11 +480,40 @@ void mostrarOrdenado() {
 	int arr[20], producto;
 	float promedio;
 	
-	titulo("Ordenar Vector 10 Elementos");
+	titulo("Alg. QuickSort");
 	pedirVertorEnteros(arr,10);
 	titulo("Sin ordenar / Ordenado");
 	mostrarArregloEnteros(arr,10);
 	q_sort(arr, 10, sizeof(int), comparar_int);
+	mostrarArregloEnteros(arr,10);
+	pausar();
+	
+}
+
+void mostrarOrdenadoSeleccion() {
+	int arr[20], producto;
+	float promedio;
+	
+	titulo("Alg. Seleccion");
+	pedirVertorEnteros(arr,10);
+	titulo("Sin ordenar / Ordenado");
+	mostrarArregloEnteros(arr,10);
+	seleccion(arr, 10, sizeof(int), comparar_int);
+	mostrarArregloEnteros(arr,10);
+	pausar();
+	
+}
+
+
+void mostrarOrdenadoBurbuja() {
+	int arr[20], producto;
+	float promedio;
+	
+	titulo("Alg. Burbuja");
+	pedirVertorEnteros(arr,10);
+	titulo("Sin ordenar / Ordenado");
+	mostrarArregloEnteros(arr,10);
+	burbuja(arr, 10, sizeof(int), comparar_int);
 	mostrarArregloEnteros(arr,10);
 	pausar();
 	

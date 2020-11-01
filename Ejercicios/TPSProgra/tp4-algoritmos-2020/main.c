@@ -27,13 +27,15 @@ int main(int argc, char *argv[]) {
 		"Ejercicio 19",
 		"Ejercicio 20",
 		"Ordenar Vector (QSort)",
+		"Ordenar Vector (Seleccion)",
+		"Ordenar Vector (Burbuja)",
 		"Salir"
 	};
 
 	crearMenu(
 			&menu,
 			opciones,
-			"ABCDEFGHIJKLMNOPQRTUS", 
+			"ABCDEFGHIJKLMNOPQRTUVWS", 
 			"TRABAJO PRACTICO 4", 
 			"Ingrese una opcion del menu", 
 			"Err elija nuevamente", 
@@ -83,6 +85,10 @@ int main(int argc, char *argv[]) {
 			case 'T': opracionesMatrices();
 				break;
 			case 'U': mostrarOrdenado();
+				break;
+			case 'V': mostrarOrdenadoSeleccion();
+				break;
+			case 'W': mostrarOrdenadoBurbuja();
 				break;
 		}
 		

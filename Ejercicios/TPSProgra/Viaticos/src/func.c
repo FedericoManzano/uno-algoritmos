@@ -59,7 +59,7 @@ char ingresarCondFin() {
 }
 
 
-void mostrarGastoViatico(const float monto) {
+void mostrarGastoViatico( const float monto ) {
 	if(monto < 0)
 		printf("Importe a devolver $ %.2f \n\n", monto * -1);
 	else

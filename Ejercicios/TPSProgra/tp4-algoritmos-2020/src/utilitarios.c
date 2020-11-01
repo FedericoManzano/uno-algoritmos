@@ -193,6 +193,7 @@ void qs(void *arreglo, int ini,int fin, size_t tam, t_cmp comp) {
 	int j = fin;
 	void *aux = malloc(tam);
 	int pivote = (i + j) / 2;
+	
 	while(i <= j) {
 		while( comp((arreglo + (pivote * tam)), (arreglo + (i * tam))) > 0 && i <= fin)
 			i ++;
@@ -213,7 +214,52 @@ void qs(void *arreglo, int ini,int fin, size_t tam, t_cmp comp) {
 		qs(arreglo,i,fin, tam,comp );
 }
 void q_sort(void *a, int ce, size_t tam, t_cmp comp) {
-	qs(a,0,ce,tam, comp);
+	qs(a,0,ce-1,tam, comp);
+}
+
+
+int menor(void *a, int ce, size_t tam, int inicio ,t_cmp comp) {
+	int menor = inicio;
+	while(inicio < ce) {
+		if(comp((a + (inicio * tam)), (a + (menor * tam))) < 0)
+			menor = inicio;
+		inicio ++;
+	}
+	return menor;
+}
+
+void seleccion (void *a, int ce, size_t tam, t_cmp comp) {
+	int men;
+	int i = 0;
+	void * aux = malloc(tam);
+	if(!aux)
+		return;
+	while(i < ce) {
+		men = menor(a,ce,tam,i,comp);
+		if(men != i) {
+			memcpy(aux, (a + (i * tam)), tam);
+			memcpy((a + (i * tam)), (a + (men * tam)), tam);
+			memcpy((a + (men * tam)), aux, tam);
+		}
+		i ++;
+	}
+	free(aux);
+}
+
+
+void burbuja (void *a, int ce, size_t tam, t_cmp comp) {
+	int i, j;
+	void *aux = malloc(tam);
+	for(i = 0; i < ce; i ++) {
+		for(j = i + 1; j < ce; j ++) {
+			if(comp((a + (i * tam)), (a + ( j * tam))) > 0) {
+				memcpy(aux, (a + (j * tam)), tam);
+				memcpy((a + (j * tam)), (a + (i * tam)), tam);
+				memcpy((a + (i * tam)),aux, tam);
+			}
+		}
+	}
+	free(aux);
 }
 
 

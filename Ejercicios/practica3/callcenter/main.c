@@ -91,7 +91,7 @@ float calcularImporte( const int codigoProducto,const int base , const int cantP
 	if(codigoProducto == 3)
 		return (float)base;
 	kg = kgPedidos(codigoProducto, cantProd);
-	if(kg <= 100) 
+	if( kg <= 100 ) 
 		importe = ( base * kg ) - ( base * kg ) * 0.1;
 	else 
 		importe = ( base * kg ) - ( base * kg ) * 0.25;

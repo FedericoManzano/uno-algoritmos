@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 
-float calcularMonto( const float km, const float gastoComidas, const float gastoPeaje);
+float calcularMonto( const float, const float, const float );
 
-int ingresarDatosEntrada( int * cEmp, char * cat, float * km, float * gc, float * gp, float * ant );
-void titulo( char * tit );
+int ingresarDatosEntrada( int *, char *, float *, float *, float *, float * );
+void titulo( char * );
 char ingresarCondFin();
-void mostrarGastoViatico( const float monto );
-void mostrarCantVendedores( const int cantVen );
+void mostrarGastoViatico( const float  );
+void mostrarCantVendedores( const int );

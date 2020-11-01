@@ -13,12 +13,12 @@ int main(int argc, char *argv[]) {
 	condFin = ingresarCondFin();
 	
 	while( condFin == 'S' || condFin == 's' ) {
-		if(ingresarDatosEntrada(&codigo, &categoria, &km,&gastoComida, &gastoPeaje, &anticipo))  
+		if(	ingresarDatosEntrada(&codigo, &categoria, &km, &gastoComida, &gastoPeaje, &anticipo)	)  
 			monto = calcularMonto(km, gastoComida,gastoPeaje) - anticipo;
 		else 
 			monto = calcularMonto(km, gastoComida,gastoPeaje);
 			
-		if( ( categoria == 'v' || categoria == 'V' ) && km > 20000) 
+		if( ( categoria == 'v' || categoria == 'V' ) && km > 20000 ) 
 			cantVen ++;
 			
 			
