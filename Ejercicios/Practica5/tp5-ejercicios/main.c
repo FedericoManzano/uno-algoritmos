@@ -24,8 +24,8 @@ int main(int argc, char *argv[]) {
 		"Salir"
 	};
 	
-	crearMenu(&menu,opciones,"ABCDEFGHIJKLS","TP 5 Punteros",  "Seleccione una opcion: ", 
-					"Err elija nuevamente: ","[]" );
+	crearMenu(&menu,opciones,"ABCDEFGHIJKLS","TP 5 Punteros",  "Seleccione una opcion", 
+					"Err elija nuevamente","[]" );
 	do {
 		op = seleccionarOpcion(&menu);
 		switch(op) {

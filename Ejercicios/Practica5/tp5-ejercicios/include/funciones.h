@@ -41,24 +41,33 @@ void 	ingresarRecaudado	( float *rec, int dia, int cajera );
 float 	recaudacionTotal	( float *rec );
 int 	determinarPremio	( float total1, float total2 );
 void 	mostrarDiaMenor		( int cajera, int diaMenor );
+
 /**
 	Ejercicio 8 --------------------------------------------------------------
 */
 char ultimoCaracter(char *);
+
+
 /**
 	Ejercicio 9 --------------------------------------------------------------
 */
 
 int letras(char *);
+
+
 /**
 	Ejercicio 10 --------------------------------------------------------------
 */
 int cantidad(char *, int);
+
+
 /**
 	Ejercicio 11 --------------------------------------------------------------
 */
 char *rev(char *);
 char * a_cadena(char *, int);
+
+
 /**
 	Ejercicio 12 --------------------------------------------------------------
 */

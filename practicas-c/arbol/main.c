@@ -17,10 +17,8 @@ int main(int argc, char *argv[]) {
 	
 	for( i = 0; i< 8; i ++) 
 		ponerEnArbol(&arbol, &v[i], comp);
-	borrarNodo(&arbol,&v[7], comp );
+	borrarNodo(&arbol,&v[0], comp );
 	mostrarArbolDib(&arbol,comp);	
-	
-	printf("%d", buscarClave(&arbol, &num, comp));
 	vaciarArbol(&arbol);
 	return 0;
 }

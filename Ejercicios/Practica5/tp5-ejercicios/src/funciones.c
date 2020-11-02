@@ -174,10 +174,9 @@ char *rev(char *s) {
 }
 
 char * a_cadena(char *s, int num) {
-	char *aux = s;
-	char *inicio = s;
+	char *aux = s; 
 	char a;
-	int resto = 0, res;
+	int resto = 0;
 	do {
 		resto = num % 10;
 		*aux = resto + '0';
@@ -202,7 +201,7 @@ char * concat(char *s1, char *s2) {
 		s1 ++;
 		s2 ++;
 	}
-	
+	*s1 = '\0';
 	return res;
 }
 

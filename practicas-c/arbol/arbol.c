@@ -60,10 +60,16 @@ int borrarNodo(t_arbol *a, t_info_arbol *info, t_cmp comp) {
 	t_nodo ** elim = aux;
 	if(!aux) 
 		return 0;
-	if((*aux)->izq) 
+	if((*aux)->izq) {
 		aux = &(*aux)->izq;
-	while(aux && (*aux)->der) 
-		aux = &( *aux )->der;
+		while(aux && (*aux)->der) 
+			aux = &( *aux )->der;
+	} else if((*aux)->der) {
+		aux = &(*aux)->der;
+		while(aux && (*aux)->izq) 
+			aux = &( *aux )->izq;
+	}
+	
 	(*elim)->info = (*aux)->info;
 	free(*aux);
 	*aux = NULL;
