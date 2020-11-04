@@ -49,8 +49,14 @@ void pbaEjercicio2() {
 void pbaEjercicio3() {
 	int vector[10], i;
 	titulo("Carga Vector");
+	
+	
 	carga(vector, 10);
+	
+	
 	printf("\n\n[ ");
+	
+	
 	for(i = 0; i < 10; i ++) 
 		printf("%d, ", vector[i]);
 	printf("] \n");
